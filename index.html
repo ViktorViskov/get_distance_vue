@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App for get distance</title>
+</head>
+<body>
+  <!-- vue js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <div id="root">
+    <input type="text" v-model="city_start">
+    <input type="text" v-model="city_stop">
+    <div>{{city_start}}</div>
+    <div>{{city_stop}}</div>
+    <button @click="search()">Get</button>
+    <div>{{distance}}</div>
+  </div>
+  <!-- app -->
+  <script src="./main.js"></script>
+</body>
+</html>
